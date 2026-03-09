@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Check Balance</title>
+  <style>
+    :root{ --primary:#2196F3; --accent:#4CAF50; --bg:#f5f7fb; --card:#ffffff; --text:#1f2933; --muted:#52606d; }
+    * { box-sizing:border-box; }
+    html,body{ height:100%; margin:0; background:var(--bg); font-family:'Segoe UI',Arial,sans-serif; color:var(--text); display:flex; align-items:center; justify-content:center; padding:20px; }
+    .container{ width:100%; max-width:600px; }
+    .card{ background:var(--card); border-radius:14px; padding:32px; box-shadow:0 12px 32px rgba(0,0,0,.08); }
+    h1{ margin:0 0 24px; background:linear-gradient(120deg,var(--primary),var(--accent)); -webkit-background-clip:text; -webkit-text-fill-color:transparent; font-size:28px; font-weight:700; }
+    .form-group{ margin-bottom:18px; }
+    label{ display:block; margin-bottom:8px; color:var(--muted); font-weight:600; font-size:14px; }
+    input{ width:100%; padding:12px 14px; border-radius:10px; border:1px solid #d9e2ec; font-size:14px; background:#fafbfd; transition:border-color .2s; }
+    input:focus{ border-color:var(--primary); outline:none; box-shadow:0 0 0 3px rgba(33,150,243,.12); }
+    .btn{ width:100%; padding:14px; border-radius:12px; font-weight:700; border:0; cursor:pointer; background:linear-gradient(120deg,var(--primary),var(--accent)); color:#fff; margin-top:12px; transition:transform .12s, box-shadow .2s; box-shadow:0 6px 16px rgba(33,150,243,.3); }
+    .btn:hover{ transform:translateY(-2px); box-shadow:0 8px 20px rgba(33,150,243,.4); }
+    .result-box{ margin-top:24px; padding:24px; background:linear-gradient(135deg,#e3f2fd,#f1f8ff); border-radius:12px; border-left:5px solid var(--primary); display:none; text-align:center; }
+    .result-box.show{ display:block; }
+    .result-label{ color:var(--muted); font-size:14px; margin-bottom:10px; font-weight:600; text-transform:uppercase; letter-spacing:.5px; }
+    .result-amount{ font-size:40px; font-weight:800; background:linear-gradient(120deg,var(--primary),var(--accent)); -webkit-background-clip:text; -webkit-text-fill-color:transparent; }
+    .result-error{ color:#e53935; -webkit-text-fill-color:#e53935; }
+    .btn-return{ background:linear-gradient(90deg,#64748b,#475569); box-shadow:0 6px 16px rgba(100,116,139,.3); margin-top:12px; }
+    .btn-return:hover{ box-shadow:0 8px 20px rgba(100,116,139,.4); }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <h1>Check Balance</h1>
+      <form method="post" action="{{ url_for('check_balance') }}">
+        <div class="form-group">
+          <label>Account Number</label>
+          <input type="text" name="account_number" placeholder="Enter your account number" required>
+        </div>
+        <button class="btn" type="submit">Check Balance</button>
+      </form>
+
+      {% if balance is not none %}
+        <div class="result-box show">
+          <div class="result-label">Your Balance</div>
+          {% if balance is string and 'not found' in balance %}
+            <div class="result-amount result-error">{{ balance }}</div>
+          {% else %}
+            <div class="result-amount">₹ {{ balance }}</div>
+          {% endif %}
+        </div>
+      {% endif %}
+
+      <button class="btn btn-return" onclick="location.href='{{ url_for('dashboard') }}'">Return to Dashboard</button>
+    </div>
+  </div>
+</body>
+</html>

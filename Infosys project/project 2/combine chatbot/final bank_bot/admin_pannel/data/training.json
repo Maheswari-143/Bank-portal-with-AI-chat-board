@@ -1,0 +1,73 @@
+{
+  "intent": "loan_type_selection",
+  "examples": [
+    "loan options",
+    "what loans do you offer"
+  ],
+  "response": "We offer home loans and personal loans. Which loan would you like?",
+  "intents": [
+    {
+      "intent": "card_inquiry",
+      "examples": [
+        "cards"
+      ],
+      "response": "Sure! Could you please specify whether it\u2019s a credit or debit card, so I can assist you better?\""
+    },
+    {
+      "intent": "open_account",
+      "examples": [
+        "open a new account\n\ni want to create a bank account\n\nhow to open an account"
+      ],
+      "response": "Sure! Please provide your name, mobile number, and address to open a new account."
+    },
+    {
+      "intent": "greeting",
+      "examples": [
+        "hello bank"
+      ],
+      "response": "Hello! This reply is from admin dataset."
+    },
+    {
+      "intent": "home_loan_inquiry",
+      "examples": [
+        "home loan\n\ni want a home loan\n\napply for home loan\n\nhousing loan details\n\nhome loan interest rate\n\nhow to get a home loan"
+      ],
+      "response": "We offer home loans at attractive interest rates. Please share the loan amount and tenure to proceed further."
+    },
+    {
+      "intent": "cheque_book_request",
+      "examples": [
+        "request cheque book\n\napply for cheque book\n\nnew cheque book\n\ncheque book order"
+      ],
+      "response": "Your cheque book request can be placed through net banking or by visiting your nearest branch."
+    },
+    {
+      "intent": "fixed_deposit_info",
+      "examples": [
+        "fixed deposit details\n\nopen fd account\n\nfd interest rates\n\nhow to invest in fd"
+      ],
+      "response": "Our fixed deposits offer attractive interest rates. Please tell me the investment amount and tenure to get started.\n"
+    },
+    {
+      "intent": "kyc_update",
+      "examples": [
+        "update kyc\n\nkyc verification\n\nsubmit kyc documents"
+      ],
+      "response": "To update your KYC, please visit the nearest branch with valid ID and address proof."
+    },
+    {
+      "intent": "card_limit_increase",
+      "examples": [
+        "increase card limit\n\ncredit card limit increase\n\nraise my card limit"
+      ],
+      "response": "You can request a card limit increase through net banking or by visiting the nearest branch with income proof."
+    },
+    {
+      "intent": "card_replace",
+      "examples": [
+        "replace my card\n\ndamaged card\n\ncard not working physically"
+      ],
+      "response": "You can request a replacement card through net banking or at the branch. Delivery may take 5\u20137 working days."
+    }
+  ]
+}

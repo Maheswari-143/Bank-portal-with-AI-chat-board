@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Admin Portal</title>
+  <style>
+    :root { --navy: #1a3c6c; --accent: #FF6B6B; }
+    html, body { height: 100%; margin: 0; background: linear-gradient(135deg, #2d1b4e, #1a3c6c); font-family: Inter, Segoe UI, Arial; display: flex; justify-content: center; align-items: center; }
+    .container { text-align: center; background: white; padding: 60px 40px; border-radius: 16px; box-shadow: 0 20px 60px rgba(0,0,0,0.3); max-width: 500px; }
+    h1 { color: var(--navy); font-size: 36px; margin-bottom: 20px; }
+    p { color: #666; font-size: 16px; margin-bottom: 40px; }
+    .btn { padding: 14px 40px; font-size: 16px; font-weight: 700; border: none; border-radius: 8px; cursor: pointer; transition: all 0.3s ease; }
+    .btn-primary { background: var(--accent); color: white; }
+    .btn-primary:hover { background: #ee5a52; transform: translateY(-2px); box-shadow: 0 10px 25px rgba(255,107,107,0.3); }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🔐 Admin Portal</h1>
+    <p>Manage users and system settings with administrator access.</p>
+    <a href="{{ url_for('admin_login') }}" class="btn btn-primary">Admin Login</a>
+  </div>
+</body>
+</html>

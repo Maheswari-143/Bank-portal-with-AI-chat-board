@@ -1,0 +1,30 @@
+[
+  {
+    "q": "How to apply for loan?",
+    "a": "Visit the loans section and submit documents."
+  },
+  {
+    "q": "What documents are required for opening a new bank account?",
+    "a": "You need a valid ID proof, address proof, passport-size photo, and PAN card to open a new bank account."
+  },
+  {
+    "q": "How can I block my debit card?",
+    "a": "You can block your debit card immediately through mobile banking, internet banking, or by calling customer support."
+  },
+  {
+    "q": "How long does it take to get a credit card approved?",
+    "a": "Credit card approval usually takes 2\u20135 working days after document verification."
+  },
+  {
+    "q": "Can I increase my credit card limit?",
+    "a": "Yes, you can request a credit limit increase through mobile banking or by contacting customer support."
+  },
+  {
+    "q": "What documents are needed for a personal loan?",
+    "a": "Typically, you need identity proof, address proof, income proof, and bank statements."
+  },
+  {
+    "q": "card_block, \"How do I activate my debit card?\"  \"Activate my new card\"",
+    "a": "\"You can block your card instantly through the mobile app, online banking, or by calling customer support.\""
+  }
+]

@@ -1,0 +1,21 @@
+query,intent,confidence,date
+What is my account balance?,check_balance,0.95,2025-12-03T10:12:00Z
+Show balance,check_balance,0.93,2025-12-03T11:00:00Z
+Transfer 500 to savings,transfer_money,0.91,2025-12-03T11:05:00Z
+Send money to John,transfer_money,0.89,2025-12-03T11:10:00Z
+How to apply for education loan?,loan_info,0.88,2025-12-03T11:20:00Z
+What are personal loan rates?,loan_info,0.82,2025-12-03T11:30:00Z
+Nearest branch timings?,branch_info,0.8,2025-12-03T11:40:00Z
+Open savings account,account_open,0.86,2025-12-03T11:45:00Z
+Reset my password,account_help,0.75,2025-12-03T11:50:00Z
+Gold loan details,loan_info,0.81,2025-12-03T12:00:00Z
+How to close account?,account_help,0.77,2025-12-03T12:05:00Z
+Show last transactions,transactions,0.9,2025-12-03T12:10:00Z
+Request checkbook,service_request,0.84,2025-12-03T12:20:00Z
+Block my debit card,card_block,0.96,2025-12-03T12:25:00Z
+How to apply for credit card?,card_info,0.83,2025-12-03T12:30:00Z
+Update KYC documents,kyc_update,0.78,2025-12-03T12:40:00Z
+Loan EMI details,loan_info,0.79,2025-12-03T12:45:00Z
+Track my complaint,support_query,0.74,2025-12-03T12:50:00Z
+Change registered mobile number,account_settings,0.72,2025-12-03T12:55:00Z
+How to link Aadhaar?,kyc_update,0.7,2025-12-03T13:00:00Z

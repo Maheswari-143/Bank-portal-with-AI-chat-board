@@ -1,0 +1,1 @@
+streamlit==1.26.0\nflask==2.3.2\npandas==2.2.2\n

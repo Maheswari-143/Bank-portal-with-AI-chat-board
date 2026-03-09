@@ -1,0 +1,50 @@
+text,intent,response,entities
+cards,card_inquiry,"Sure! Could you please specify whether it’s a credit or debit card, so I can assist you better?",""
+open a new account,open_account,"Sure! Please provide your name, mobile number, and address to open a new account.",""
+i want to create a bank account,open_account,"Sure! Please provide your name, mobile number, and address to open a new account.",""
+how to open an account,open_account,"Sure! Please provide your name, mobile number, and address to open a new account.",""
+hello bank,greeting,"Hello! This reply is from admin dataset.",""
+home loan,home_loan_inquiry,"We offer home loans at attractive interest rates. Please share the loan amount and tenure to proceed further.",""
+i want a home loan,home_loan_inquiry,"We offer home loans at attractive interest rates. Please share the loan amount and tenure to proceed further.",""
+apply for home loan,home_loan_inquiry,"We offer home loans at attractive interest rates. Please share the loan amount and tenure to proceed further.",""
+housing loan details,home_loan_inquiry,"We offer home loans at attractive interest rates. Please share the loan amount and tenure to proceed further.",""
+home loan interest rate,home_loan_inquiry,"We offer home loans at attractive interest rates. Please share the loan amount and tenure to proceed further.",""
+how to get a home loan,home_loan_inquiry,"We offer home loans at attractive interest rates. Please share the loan amount and tenure to proceed further.",""
+request cheque book,cheque_book_request,"Your cheque book request can be placed through net banking or by visiting your nearest branch.",""
+apply for cheque book,cheque_book_request,"Your cheque book request can be placed through net banking or by visiting your nearest branch.",""
+new cheque book,cheque_book_request,"Your cheque book request can be placed through net banking or by visiting your nearest branch.",""
+cheque book order,cheque_book_request,"Your cheque book request can be placed through net banking or by visiting your nearest branch.",""
+"fixed deposit details
+
+open fd account
+
+fd interest rates
+
+how to invest in fd",fixed_deposit_info,"Our fixed deposits offer attractive interest rates. Please tell me the investment amount and tenure to get started.
+",
+fixed deposit details,fixed_deposit_info,"Our fixed deposits offer attractive interest rates. Please tell me the investment amount and tenure to get started.
+",
+open fd account,fixed_deposit_info,"Our fixed deposits offer attractive interest rates. Please tell me the investment amount and tenure to get started.
+",
+fd interest rates,fixed_deposit_info,"Our fixed deposits offer attractive interest rates. Please tell me the investment amount and tenure to get started.
+",
+how to invest in fd,fixed_deposit_info,"Our fixed deposits offer attractive interest rates. Please tell me the investment amount and tenure to get started.
+",
+update kyc,kyc_update,"To update your KYC, please visit the nearest branch with valid ID and address proof.
+",
+kyc verification,kyc_update,"To update your KYC, please visit the nearest branch with valid ID and address proof.
+",
+submit kyc documents,kyc_update,"To update your KYC, please visit the nearest branch with valid ID and address proof.
+",
+increase card limit,card_limit_increase,"You can request a card limit increase through net banking or by visiting the nearest branch with income proof.
+",
+credit card limit increase,card_limit_increase,"You can request a card limit increase through net banking or by visiting the nearest branch with income proof.
+",
+raise my card limit,card_limit_increase,"You can request a card limit increase through net banking or by visiting the nearest branch with income proof.
+",
+replace my card,card_replace,"You can request a replacement card through net banking or at the branch. Delivery may take 5–7 working days.
+",
+damaged card,card_replace,"You can request a replacement card through net banking or at the branch. Delivery may take 5–7 working days.
+",
+card not working physically,card_replace,"You can request a replacement card through net banking or at the branch. Delivery may take 5–7 working days.
+",

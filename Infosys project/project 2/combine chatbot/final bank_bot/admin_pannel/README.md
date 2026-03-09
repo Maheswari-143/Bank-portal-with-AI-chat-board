@@ -1,0 +1,1 @@
+# BankBot Admin Panel (Redesigned)\n\nRun: \n1. pip install -r requirements.txt\n2. python backend.py (optional)\n3. streamlit run admin_app.py\n
